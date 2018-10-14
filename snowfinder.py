@@ -33,3 +33,9 @@ conditions = df.iloc[:, 2]
 open_terrian = df.iloc[:, 3]
 comments = df.iloc[:, 4
 ""
+# Export to CSV within google co alb 
+
+from google.colab import files
+# do not print header and do not print index column 
+df.to_csv('SnowDatabaseExport.csv', header=0, index=False)
+files.download('SnowDatabaseExport.csv')
