@@ -1,16 +1,18 @@
+# to install a program within colab use !pip install 
+
 import pandas as pd
-!pip show pandas
+# !pip show pandas
 import requests
-!pip show requests
+# !pip show requests
 from bs4 import BeautifulSoup
-!pip show bs4
-!pip install tabulate
+# !pip show bs4
+# !pip install tabulate
 from tabulate import tabulate
-!pip show tabulate
+# pip show tabulate
 import csv 
-!pip show csv
+# pip show csv
 import bs4
-!pip3 install lxml
+# pip3 install lxml
 import lxml
 import bs4.builder._lxml
 
