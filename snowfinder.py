@@ -41,3 +41,20 @@ from google.colab import files
 # do not print header and do not print index column 
 df.to_csv('SnowDatabaseExport.csv', header=0, index=False)
 files.download('SnowDatabaseExport.csv')
+
+
+# Connect to postgres (in complete)
+"""
+conn = psycopg2.connect('dbname=dq user=dq')
+cur = conn.cursor()
+# sample_file.csv has a header row.
+with open('SnowDataBaseExport.csv', 'r') as f:
+    # Skip the header row.
+    next(f)
+    cur.copy_from(f, 'users', sep=',')
+conn.commit()
+
+cur.execute('SELECT * FROM new_snow')
+users = cur.fetchall()
+conn.close()
+"""
