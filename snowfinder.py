@@ -23,3 +23,13 @@ table = soup.find_all('table')[0]
 
 df = pd.read_html('http://www.WEBSITE.com/news/snow-report/', header=0)[0]
 df
+
+
+"""""
+# Variable list objects 
+resort_list = df.iloc[:, 0]
+new_snow = df.iloc[:, 1]
+conditions = df.iloc[:, 2]
+open_terrian = df.iloc[:, 3]
+comments = df.iloc[:, 4
+""
